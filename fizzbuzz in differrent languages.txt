@@ -1,0 +1,131 @@
+##### ruby ####
+
+def fizzbuzz(number)
+    if number % 3 == 0 and number % 5 == 0
+        return "fizzbuzz"
+    elsif number % 5 == 0
+        return "buzz"
+    elsif number % 3 == 0
+        return "fizz"
+    else
+        return "not fizzbuzzable"
+    end
+end
+
+puts fizzbuzz(4)
+
+
+#### python ####
+
+def fizzbuzz(number):
+    if number % 15 == 0:
+        return "fizzbuzz"
+    elif number % 5 == 0:
+        return "buzz"
+    elif number % 3 == 0:
+        return "fizz"
+    else:
+        return "not fizzbuzzable"
+    
+print(fizzbuzz(5))
+
+
+
+#### java ####
+
+public class Main {
+    public static void main(String[] args) {
+      System.out.println(fizzbuzz(3));
+    
+    }
+    static String fizzbuzz(float number) {
+      if (number % 15 == 0) {
+        return "fizzbuzz";
+      } else if (number % 5 == 0) {
+        return "buzz";
+      } else if (number % 3 == 0) {
+        return "fizz";
+      } else {
+        return "not fizzbuzzable";
+      }
+    }
+    
+  }
+
+#### c++ ####
+
+
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+string fizzbuzz(float number) {
+  if (fmod(number,15) == 0){
+    return "fizzbuzz";
+  } else if (fmod(number,5) == 0) {
+    return "buzz";
+  } else if (fmod(number,3) == 0) {
+    return "fizz";
+  } else {
+    return "not fizzbuzzable";
+  }
+
+}
+int main() {
+  cout << fizzbuzz(16);
+}
+
+#### javascript ####
+
+function fizzbuzz(number){
+    if (number % 15 == 0) {
+        return "fizzbuzz"
+    } else if (number % 5 == 0){
+        return "buzz"
+    } else if (number % 3 == 0){
+        return "fizz"
+    } else {
+        return "not fizzbuzzable"
+    }
+}
+
+console.log(fizzbuzz(3))
+
+
+#### c# (c sharp) ####
+
+using System;
+
+class Program {
+  static string fizzbuzz(float number) {
+    if (number % 3 == 0 && number % 5 == 0) {
+      return "fizzbuzz";
+    } else if (number % 3 == 0) {
+      return "fizz";
+    } else if (number % 5 == 0) {
+      return "buzz";
+    } else {
+      return "not fizzbuzzable";
+    }
+  }
+  public static void Main (string[] args) {
+    Console.WriteLine(fizzbuzz(15));
+  }
+}
+
+#### lua ####
+
+function fizzbuzz(number)
+  if number % 3 == 0 and number % 5 == 0 then
+    return "FizzBuzz"
+  elseif number % 3 == 0 then
+    return "Fizz"
+  elseif number % 5 == 0 then
+    return "Buzz"
+  else
+    return "not fizzbuzzable"
+  end
+
+end
+
+print(fizzbuzz(13))
