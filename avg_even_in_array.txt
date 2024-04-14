@@ -1,0 +1,132 @@
+each section of code here will take a list and return the average of all evens 
+
+
+#### python ####
+
+def average_of_even(input_list):
+    total = 0
+    evens_in_list = 0
+    for i in input_list:
+        if i % 2 == 0:
+            evens_in_list += 1
+            total += i
+    return total/evens_in_list
+
+
+print(average_of_even([2,4,6,8,10,12,3,3,3]))
+
+
+
+#### lua ####
+
+function even_in_table(input_table)
+  local total = 0
+  local evens_in_table = 0
+  for i in ipairs(input_table) do
+    if i % 2 == 0 then
+      total = total + i
+      evens_in_table = evens_in_table + 1
+    end
+  end
+  return total / evens_in_table
+end
+print(even_in_table({1,2,3,4,5,6,7,8,9,10}))
+
+
+#### java script ####
+
+function avg_even_in_list(input_list) {
+    num_even_in_list = 0;
+    total = 0;
+    for (let i = 0;i<input_list.length;i++) {
+        if (input_list[i] % 2 == 0) {
+            num_even_in_list += 1;
+            total += i;
+        }
+    }
+    return total/num_even_in_list;
+    }
+console.log(avg_even_in_list([1,2,3,4,5,6,7,8,9,10]));
+
+
+#### java ####
+
+public class Main {
+    public static void main(String[] args) {
+      int[] in_array = {2,4,6,8,10,12,13,15,16};
+      System.out.println(avg_even_in_array(in_array));
+    }
+    static Number avg_even_in_array(int[] in_array){
+      int evens_in_array = 0;
+      int total = 0;
+      for (int i : in_array){
+        if (i % 2 == 0) {
+          evens_in_array += 1;
+          total += i;
+        }
+
+      }
+      return total/evens_in_array;
+    }
+
+#### ruby ####
+
+def avg_even_numbers_in_array(array)
+  number_evens_in_array = 0.to_i
+  total = 0.to_f
+  for i in array
+    if i % 2 == 0
+      number_evens_in_array += 1
+      total += i
+    end
+  end
+  return total / number_evens_in_array
+end
+puts avg_even_numbers_in_array([4,6,6,6,4])
+
+
+#### c++ ####
+
+#include <iostream>
+using namespace std;
+
+float avg_even_in_array(int array[]) {
+  int number_even_in_array = 0;
+  int total = 0;
+  for (int i = 0; i < 5; i++) {
+    if (array[i] % 2 == 0) {
+      number_even_in_array++;
+      total += array[i];
+    }
+  }
+  return total / number_even_in_array;
+}
+int main() {
+  int array[5] = {1, 2, 3, 4, 5};
+  cout << avg_even_in_array(array);
+  return 0;
+}
+
+
+#### c# ####
+
+using System;
+
+class Program {
+
+  static float avg_even_in_array(int[] array) {
+    int total = 0;
+    int evens_in_array = 0;
+    foreach (int i in array) {
+      if (i % 2 == 0) {
+        total += i;
+        evens_in_array += 1;
+      }
+    }
+    return total / evens_in_array;
+  }
+  public static void Main (string[] args) {
+    int[] array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    Console.WriteLine(avg_even_in_array(array));
+  }
+}
